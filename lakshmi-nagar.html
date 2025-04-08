@@ -77,6 +77,14 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+<!-- Magnific Popup CSS -->
+<link rel="stylesheet" href="path/to/magnific-popup.css">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Magnific Popup JS -->
+<script src="path/to/jquery.magnific-popup.min.js"></script>
 
     <style>
         .more-image {
@@ -102,6 +110,9 @@
      }
      
          </style>
+    
+        
+            
 </head>
 
 <body class="inner-pages sin-1 homepage-4 hd-white">
@@ -260,8 +271,12 @@
                                 </div>
 
                                 <div class="blog-info details mb-30">
-                                    <img class="d-block img-fluid" src="images/gallery/l-2.jpg" >
+                                    <a href="images/gallery/l-2.jpg" class="image-popup">
+                                        <img class="d-block img-fluid" src="images/gallery/l-2.jpg" alt="Gallery Image">
+                                    </a>
+                                    
                                 </div>
+                                
                             </div>
                         </div>
                         
@@ -616,6 +631,18 @@
             });
         }
     });
+
+    $(document).ready(function() {
+    $('.image-popup').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        mainClass: 'mfp-img-mobile',
+        image: {
+            verticalFit: true
+        }
+    });
+});
+
     </script>
 </body>
 
