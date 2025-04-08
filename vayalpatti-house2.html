@@ -82,6 +82,45 @@
         .carousel-item img{
             height: 700px;
         }
+
+
+        .amenities-list {
+  display: flex;
+  gap: 40px; /* Space between the two lists */
+  flex-wrap: wrap;
+}
+
+.amenities-list ul {
+    list-style-type: circle;    /* Hollow circle ○ */
+    padding-left: 20px;
+  flex: 1 1 45%;
+}
+
+.amenities-list ul li{
+    color:black;
+}
+
+.more-image {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+     
+     .more-image .btn-link {
+         display: inline-block;
+         height: 40px;
+         line-height: 40px;
+         padding: 0 20px;
+         background-color: #048d26;
+         color: rgb(255, 255, 255);
+         text-decoration: none;
+         border-radius: 5px;
+         margin-top: -35px;
+     }
+     
+     .more-image .btn-link:hover {
+         background-color: #adc4b9;
+     }
     </style>.
 </head>
 
@@ -243,7 +282,10 @@
                                 <!-- cars content -->
                              
                                 <div class="blog-info details mb-30">
-                                    <h5 class="mb-4">Description</h5>
+                                      <div class="more-image">
+                                        <h5 class="mb-4">Description</h5>
+                                        <a href="gallery.html?filter=house-2" class="btn-link">more Images</a>
+                                     </div>
                                     <p class="mb-3">This fully built modern house is ready to occupy with three bedrooms, two bathrooms, one living room, pooja room, kitchen and dining.
                                          Built on 4 cents of land, this house has all cupboards, kitchen cabinets, bathroom fittings, electrical fitting, fitted and ready for use.
                                           This house has a separate servant's toilet. The house has a borewell with an underground water tank, RC covered car park and RC covered stairs to access the terrace.
@@ -252,6 +294,31 @@
                                     </p>
                                     <p><strong>Make your dreams come true with our ready to occupy house in Ram Nagar, Vayalpatti. Please call us for more details.</strong></p>
                                 </div>
+
+                                <div class="blog-info details mb-30">
+                                    <h5 class="mb-4">Amenities</h5>
+                                    <div class="amenities-list">
+                                      <ul>
+                                        <li>4 Cent land</li>
+                                        <li>2 BHK with attached Bathroom</li>
+                                        <li>Front sitout area</li>
+                                        <li>Fully furnished kitchen</li>
+                                        <li>Semi furnished bedroom</li>
+                                        <li>Separate maid toilet</li>
+                                        
+                                      </ul>
+                                      <ul>
+                                        <li>Rc covered staircase</li>
+                                        <li>Rc covered car parking area</li>
+                                        <li>Borewell with underground water storage</li>
+                                        <li>Living room Tv unit & storage</li>
+                                        <li>Fully decorated pooja</li>
+                                        <li>Teakwood door & window</li>
+                                      </ul>
+                                    </div>
+                                    <p><strong>Ready to occupy</strong></p>
+                                </div>
+
                             </div>
                         </div>
                       
@@ -404,7 +471,7 @@
                 </div>
                 <div class="second-footer">
                     <div class="container">
-                        <p>2021 © Copyright - All Rights Reserved.</p>
+                        <p>Copyright VNP ASSOCIATES powered by V-Square Realtors.</p>
                         <ul class="netsocials">
                             <li><a href="https://www.facebook.com/people/V-Square-Realtors/61559643477968/?is_tour_dismissed"><i class="fa-brands fa-square-facebook fa-beat"></i></i></a></li>
                             <li><a href="https://www.instagram.com/vsquarerealtors79/"><i class="fa-brands fa-square-instagram fa-beat"></i></a></li>
